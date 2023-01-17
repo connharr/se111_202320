@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Connor Harrington, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--IN-DOCUMENT STYLING-->
+    <style>
+        /*in here we write in CSS*/
+
+        /*SELECTING in CSS & Javascript: select specific element(s) on a page
+        
+            *by ELEMENT/TAG type        ex: body, div, p
+            *by ID attribute            ex: #wrapper, #nav, #footer, $title
+            *by CLASS attribute         ex: coming in week 3  :]
+        */
+
+        div { /*applies to ALL divs on the page*/
+
+            border:1px solid black; 
+            padding:10px; /*adds 10px of space to all 4 sides of the element,
+             between its content and its border*/
+            margin:5px; /*adds 5px of space to all 4 sides between other elements*/
+            /*background-color:white;*/
+
+        }
+
+        #nav {/* # specifies ID name*/
+
+            background-color:rgb(200, 200, 200);
+
+        }
+
+    </style>
+
+</head>
+<body style="background-color:gray">
+    <div id="wrapper"><!--"wraps around" all content on page-->
+        
+        <h1>Connor M. Harrington</h1>
+
+        <!--NAV SECTION-->
+        <div id="nav"> 
+            <!--ID Names can only be used 1x per page-->
+
+            <!--linking to OUTSIDE pages [not part of your website] you need FULL PATH-->
+            <a href="https://www.meca.edu/" target="_blank">Visit MECA</a>
+            <!--href holds the URL of web page you are linking to-->
+            <!--target="_blank" opens in link new tab in browser-->
+
+            <!--IN-PAGE JUMP LINKs: listing to sections within the actual page itsself-->
+            <a href="#bio">BIO</a>
+            <a href="#school">SCHOOLING</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/#nav-->
+
+        <!--BIO SECTION-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the
+                 <i>only time</i> a man can be brave.A forked purple lightning 
+                 bolt, on black field speckled with four-pointed stars. Winter is 
+                 coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, 
+                 Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings 
+                 landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+
+                 <!--IMAGE TAG-->
+                 <!--remote image link example (absolute path - BOOOOOOOOO!  NOT SAFE!)-->
+                 <img src="https://hbomax-images.warnermediacdn.com/images/GVU4NYgvPQlFvjSoJAbmL/tile?size=1280x720&format=jpeg&partner=hbocom&v=46e72923a9154f662bf277d0f08160a3&host=art-gallery.api.hbo.com" alt="dragon show man">
+
+                 <!--RELATIVE img link example-->
+                 <!--relative means: resource (file) exists WITHIN the ROOT FOLDER-->
+                 <img src="images/stormsEnd.jpg" alt="illustration of storms end from Westeros" style="width:500px">
+
+        </div>
+
+        <!--SCHOOLING SECTION-->
+        <div id="school">
+            
+            <h2>Schooling</h2>
+
+            <ol>
+                <li>school 1</li>
+                <li>school 2</li>
+                <li>school 3</li>
+            </ol>
+
+            <img src="images/meca.jpg" alt="MECA Porteous building facade" style="width:500px">
+
+        </div>
+
+        <!--HOBBIES SECTION-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Hobby 1</li>
+                <li>Hobby 2</li>
+                <li>Hobby 3</li>
+                <li><a href="link here">type here</a></li>
+            </ul>
+
+        </div>
+
+        <!--FOOTER SECTION-->
+        <div id="footer">
+
+            <a href="#wrapper">Back to Top of Page</a>
+            <p>&copy; 2023 | C Harrington | SE111.02 [202320]</p>
+
+            <!--VALIEDATION IMAGE SCREENSHOT BELOW-->
+            <img src="" alt="validation screenshot">
+
+        </div>
+
+    </div><!--/ end of main div-->
+</body>
+</html>
