@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Connor Harrington">
+    <meta name="description" content="W6 | JS Pay Calculator">
+
+    <title>JS Pay Calculator</title>
+</head>
+<body>
+    
+    <!--we should have some type of HTML in the file to start-->
+    <h1>W6 | JS Pay Calculator</h1>
+
+    <script>
+
+        var hr = Number(prompt(`What is your hourly rate?  `)) //hourly rate
+        var hw = Number(prompt(`How many hours do you work in a week?  `)) //hours worked
+
+        hw = hw * 2 //2 weeks of pay
+
+        var gp = Number(hw * hr).toFixed(2) //gross pay
+        console.log(`gross pay = $`,gp)
+
+        var tax = Number(0.2 * gp).toFixed(2) //tax (uncle sam's share)
+        console.log(`tax = $`,tax)
+
+        var np = Number(gp - tax).toFixed(2) //net pay
+        console.log(`net pay = $`,np)
+
+        alert(`Your gross pay is: $${gp}.  The taxable amount of your gross pay is: $${tax}.  Your net pay is: $${np}.`)
+
+    </script>
+
+
+</body>
+</html>
