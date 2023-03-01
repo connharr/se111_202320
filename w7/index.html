@@ -122,7 +122,7 @@
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = `${full}<br>${hours.toFixed(2)}<br>${rate.toFixed(2)}` 
+            var finalMessage = `Name: ${full}<br>Hours: ${hours.toFixed(2)}<br>Rate: ${rate.toFixed(2)}` 
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
@@ -136,7 +136,7 @@
 
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
-            num.innerHTML = `${gross.toFixed(2)}<br>${taxAmount.toFixed(2)}<br>${net.toFixed(2)}`
+            num.innerHTML = `Gross Pay: ${gross.toFixed(2)}<br>Tax Amount: ${taxAmount.toFixed(2)}<br>Net Pay: ${net.toFixed(2)}`
 
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
