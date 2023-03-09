@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Week 2 Files</title>
+<meta name="author" content="Connor Harrington">
+<meta name="description" content="Week 9 | Creating Elements">
+<title>Week 9 | Creating Elemements</title>
 <style type="text/css">
 	.border{border:1px solid black;}
 </style>
@@ -22,6 +24,26 @@
 		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
 		{first:"Marion", last:"Cobretti", credit:"Cobra" }
 	]
+
+	var body = document.querySelector(`body`)
+
+	for(let i = 0; i < people.length; i++) //i += 1 is the same as i++
+        { 
+            var tempDiv = document.createElement(`div`)
+
+            tempDiv.setAttribute(`id`, `${i}`)
+            tempDiv.setAttribute(`class`, `border`)
+
+            for(key in people[i])//key == property
+            {
+                var p = document.createElement(`p`)
+                var text = document.createTextNode(people[i][key])//key means property, accesses next value every time loop runs
+
+                p.appendChild(text)//makes text a child of p
+                tempDiv.appendChild(p)//makes p a child of tempDiv
+            }
+            body.appendChild(tempDiv)//body needs to be between the loops in order to run correctly (runs after all keys have been used)
+        }
 	
 </script>
 
